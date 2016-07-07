@@ -114,6 +114,7 @@ Links
 
    Debugger_Guide
    Module_Guide
+   MCU
 
 Indices and tables
 ^^^^^^^^^^^^^^^^^^
