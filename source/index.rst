@@ -93,7 +93,7 @@ into the debugger board and the application must be installed
 to the MCU on the flexible band. The following shows the proper
 way to attach the flexible band to the debugger board:
 
-.. image:: Flex_to_Board.PNG
+.. image:: Flex_to_Board.png
 
 Once the application has been installed, the band can be folded
 to fit into a smaller space.
@@ -103,7 +103,7 @@ modules is between slot B and C, and the smallest gap is
 between C and D. This should help you with the initial
 orientation of the band.
 
-.. image:: Folding_guide.PNG
+.. image:: Folding_guide.png
 
 Links
 ^^^^^
