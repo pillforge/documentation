@@ -14,15 +14,15 @@ for their own project.
 
 What you'll need
 ^^^^^^^^^^^^^^^^
-- A SMAC debugger board
+- A debugger board
 - An MCU module
 - A wireless module and relay board (if communication with a base station is needed)
 - Sensor and actuator modules as needed
-- A SMAC flexible circuit
+- A flexible circuit
 - An environment to write pure TinyOS applications, or Vanderbilt's WebGME environment
 
-**Step 1:** Get an idea
------------------------
+**Step 1:** Getting started
+---------------------------
 
 Although the initial development for this project
 was focused around medical devices, the platform
@@ -31,16 +31,15 @@ rapid prototyping of a small,
 lightweight wireless system of sensors and actuators.
 
 Connectivity between the sensor and actuator
-modules is achieved with a flexible circuit*
+modules is achieved with a :ref:`Flexible Circuit <Debugger Guide>`
 on which the modules are mounted
 before being folded to form the body of the MCR.
-
-.. image:: flexible.jpg
 
 The backbone can host up to five different modules
 using 30-pin miniature connectors.
 The developer must keep in mind that the center slot
-is reserved for the MCU module*, and one slot is reserved
+is reserved for the :ref:`MCU module <Debugger Guide>`,
+and one slot is reserved
 for the power management module. This leaves three
 modules available for sensors and actuators.
 
@@ -58,6 +57,11 @@ and 3 existing actuation modules for the MCR:
 to pages that will have more information on each individual
 sensor)
 
+If your project requires a sensor or actuator that has not
+currently been developed for this platform, please
+refer to the :ref:`Module Design Guide <Debugger Guide>`
+for important information.
+
 **Step 3:** Write code
 ----------------------
 
@@ -69,15 +73,22 @@ To program the MCU, you can either create your own application
 with pure TinyOS representation, or utilize the graphical
 design environment currently in development.
 
+To get started writing a TinyOS application, follow the TinyOS
+:ref:`Installation Guide <Debugger Guide>`for Ubuntu.
+
 **Step 4:** Test and debug code
 -------------------------------
 
 To test, debug, and eventually implement the code,
-there exists a debugger board* with all of the
-functionalities of the flexible band, including
+there exists a debugger board with all of the
+functionalities of the flexible circuit, including
 an identical MCU and the same wireless capabilities.
 Refer to the :ref:`Debugger Guide <Debugger Guide>` for more information on
 the board layout and functions.
+
+We have developed a TinyOS platform called VUMCR that will serve as the
+make target for the application. For support with using the debugger board
+to port TinyOS, see the :ref:`VUMCR Platform Support <Debugger Guide>`
 
 
 **Step 5:** Install application on the flexible circuit
@@ -86,12 +97,13 @@ the board layout and functions.
 When the modules have all been tested and debugged
 on the debugger board, they must be attached to the
 30-pin miniature connectors on the flex band. REMEMBER,
-slot A is designated for the power module, slot C
-is designated for the MCU, and the wireless module is docked
+slot A is designated for the :ref:`Power Module <Debugger Guide>`, slot C
+is designated for the MCU, and the :ref:`Wireless Module <Debugger Guide>`
+is docked
 on top of the MCU. The band must then be plugged
 into the debugger board and the application must be installed
-to the MCU on the flexible band. The following shows the proper
-way to attach the flexible band to the debugger board:
+to the MCU on the flexible circuit. The following shows the proper
+way to attach the flexible circuit to the debugger board:
 
 .. image:: Flex_to_Board.png
 
@@ -113,8 +125,15 @@ Links
    :maxdepth: 2
 
    Debugger_Guide
-   Module_Guide
    MCU
+   Wireless
+   Flexible_Circuit
+   Power_Module
+   Module_Design
+   Module_Guide
+   Install_on_Ubuntu
+   EXP_Support
+
 
 Indices and tables
 ^^^^^^^^^^^^^^^^^^

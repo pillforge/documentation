@@ -1,4 +1,4 @@
-MCU module
+MCU Module
 ==========
 
 .. image:: MCU.jpg

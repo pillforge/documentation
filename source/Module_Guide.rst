@@ -13,6 +13,5 @@ Sensors and Actuators
    PT
    8ADC
    2AF_ADC
-   BSDCC
+   BDCC
    BSLDCC
-   VI
