@@ -1,6 +1,6 @@
 Welcome to Vanderbilt's MCR Developer's Guide!
 =============================================
-The goal of Vanderbilt's MCR project is to systematize
+The goal of Vanderbilt's Modular Capsule Robot (MCR) project is to systematize
 the development of miniaturized wireless
 devices by creating a cyber-physical
 design environment that will eliminate
@@ -14,7 +14,7 @@ for their own project.
 
 What you'll need
 ^^^^^^^^^^^^^^^^
-- A debugger board
+- A Debugger Board
 - An MCU module
 - A wireless module and relay board (if communication with a base station is needed)
 - Sensor and actuator modules as needed
@@ -31,17 +31,17 @@ rapid prototyping of a small,
 lightweight wireless system of sensors and actuators.
 
 Connectivity between the sensor and actuator
-modules is achieved with a :ref:`Flexible Circuit <Debugger Guide>`
+modules is achieved with a :ref:`Flexible Circuit <Module Ref>`
 on which the modules are mounted
 before being folded to form the body of the MCR.
 
 The backbone can host up to five different modules
 using 30-pin miniature connectors.
 The developer must keep in mind that the center slot
-is reserved for the :ref:`MCU module <Debugger Guide>`,
+is reserved for the :ref:`MCU module <Module Ref>`,
 and one slot is reserved
-for the power management module. This leaves three
-modules available for sensors and actuators.
+for the :ref:`Power Management Module <Module Ref>`.
+This leaves three modules available for sensors and actuators.
 
 
 **Step 2:** Choose modules
@@ -74,13 +74,13 @@ with pure TinyOS representation, or utilize the graphical
 design environment currently in development.
 
 To get started writing a TinyOS application, follow the TinyOS
-:ref:`Installation Guide <Debugger Guide>`for Ubuntu.
+:ref:`Installation Guide <Debugger Guide>` for Ubuntu.
 
 **Step 4:** Test and debug code
 -------------------------------
 
 To test, debug, and eventually implement the code,
-there exists a debugger board with all of the
+there exists a Debugger Board with all of the
 functionalities of the flexible circuit, including
 an identical MCU and the same wireless capabilities.
 Refer to the :ref:`Debugger Guide <Debugger Guide>` for more information on
@@ -95,10 +95,10 @@ to port TinyOS, see the :ref:`VUMCR Platform Support <Debugger Guide>`
 -------------------------------------------------------
 
 When the modules have all been tested and debugged
-on the debugger board, they must be attached to the
+on the Debugger Board, they must be attached to the
 30-pin miniature connectors on the flex band. REMEMBER,
-slot A is designated for the :ref:`Power Module <Debugger Guide>`, slot C
-is designated for the MCU, and the :ref:`Wireless Module <Debugger Guide>`
+slot A is designated for the :ref:`Power Module <Module Ref>`, slot C
+is designated for the MCU, and the :ref:`Wireless Module <Module Ref>`
 is docked
 on top of the MCU. The band must then be plugged
 into the debugger board and the application must be installed
@@ -111,28 +111,39 @@ Once the application has been installed, the band can be folded
 to fit into a smaller space.
 To most efficiently compress the band,
 follow the folding guide. NOTE: the largest gap between
-modules is between slot B and C, and the smallest gap is
+modules is between slots B and C, and the smallest gap is
 between C and D. This should help you with the initial
 orientation of the band.
 
 .. image:: Folding_guide.png
 
+Modules
+^^^^^^^
+.. _Module Ref:
+
+.. toctree::
+   :maxdepth: 2
+
+   MCU
+   Wireless
+   Power_Module
+   Module_Guide
+
+
 Links
 ^^^^^
+
 .. _Debugger Guide:
 
 .. toctree::
    :maxdepth: 2
 
    Debugger_Guide
-   MCU
-   Wireless
    Flexible_Circuit
-   Power_Module
    Module_Design
-   Module_Guide
    Install_on_Ubuntu
    EXP_Support
+
 
 
 Indices and tables

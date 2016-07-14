@@ -3,7 +3,7 @@ Wireless Module
 
 .. image:: Wireless.jpg
 
-The CC2650 is a wireless MCU that consists of a 2.4 GHz radio and
+The IC of the Wireless Module is the CC2650, which is a wireless MCU that consists of a 2.4 GHz radio and
 a high-performance ARM CPU.
 
 Many MCR applications require a wireless

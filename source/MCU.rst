@@ -3,7 +3,8 @@ MCU Module
 
 .. image:: MCU.jpg
 
-The CPU handles local computation, sensor management
+The IC for the MCU Module is the MSP430, which is a 16-Bit Ultra-Low-Power Microcontroller.
+The MCU handles local computation, sensor management
 and other housekeeping tasks of the MCR. It must be
 small enough in size to be embedded into the capsule,
 and must operate in low-power modes to maximize the
@@ -16,7 +17,8 @@ capabilities of each of the 30 pins:
 
 .. image:: MCU_slot.PNG
 
-The pins listed here represent the pins of the 30-pin minature connector
+The pins listed here represent the pins of the 30-pin minature
+connector on the bottom side of the module:
 
 
 **Digital GPIO**
