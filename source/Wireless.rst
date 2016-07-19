@@ -1,10 +1,13 @@
+.. _Wireless Module:
+
 Wireless Module
 ===============
 
 .. image:: Wireless.jpg
 
-The IC of the Wireless Module is the CC2650, which is a wireless MCU that consists of a 2.4 GHz radio and
-a high-performance ARM CPU.
+The IC of the Wireless Module is the TI CC1100, which
+is a low-cost, 433 MHz radio
+designed for very low-power wireless applications
 
 Many MCR applications require a wireless
 communication channel for transmitting information

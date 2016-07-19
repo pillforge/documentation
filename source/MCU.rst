@@ -1,3 +1,5 @@
+.. _MCU module:
+
 MCU Module
 ==========
 

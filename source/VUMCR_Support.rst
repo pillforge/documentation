@@ -8,7 +8,7 @@ and is represented as the x5xxx family in TinyOS.
 
 **Building**
 
-We have developed a TinyOS platform for use with the :ref:`Debugger Board`.
+We have developed a TinyOS platform for use with the :ref:`Debugger Board <Debugger Guide>`.
 The make target for this board is vumcr, thus the make command is.::
 
     $ make vumcr
@@ -33,7 +33,7 @@ following in /etc/udev/rules.d/82-msp430.rules and chmod it to 644.::
       ### mspdebug
 
 
-mspdebug can be used to program the MSP430 through the eZ430 emulation interface. The switches on the Debugger Board must be correctly configured (See Debugger Guide)
+mspdebug can be used to program the MSP430 through the eZ430 emulation interface. The switches on the Debugger Board must be correctly configured (See :ref:`Debugger Guide`)
 and the usb cable has to be connected. Additionally, mspdebug has to be installed on the host computer.
 
 **mspdebug tilib**

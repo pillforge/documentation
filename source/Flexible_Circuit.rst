@@ -1,3 +1,5 @@
+.. _Flexible Circuit:
+
 Flexible Circuit
 ================
 

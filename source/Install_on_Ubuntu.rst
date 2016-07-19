@@ -1,3 +1,5 @@
+.. _Installation Guide:
+
 Install on Ubuntu
 =================
 
@@ -20,7 +22,7 @@ Install on Ubuntu
 
 5. Refresh the package database.::
 
-        gpg --keyserver keyserver.ubuntu.com --recv-keys 34EC655A
+        gpg --keyserver http://tinyprod.net/repos/debian/ --recv-keys 34EC655A
         gpg -a --export 34EC655A | sudo apt-key add -
         sudo apt-get update
 
@@ -33,17 +35,11 @@ Install on Ubuntu
         sudo mkdir /opt/tinyos
         sudo chown `id -u`.`id -g` /opt/tinyos/
 
-8. Add your GitHub private ssh key.::
+8. Get the tinyos repository.::
 
-        mkdir ~/.ssh
-        <copy your private SSH key to ~/.ssh/id_rsa>
-        chmod -R go-rwx ~/.ssh
+        git clone http://github.com/pillforge/tinyos.git /opt/tinyos/
 
-9. Get the tinyos repository.::
-
-        git clone git@github.com:pillforge/tinyos.git /opt/tinyos/
-
-10. Create a new file: /etc/profile.d/tinyos.sh with the following contents.::
+9. Create a new file: /etc/profile.d/tinyos.sh with the following contents.::
 
         TOSROOT="/opt/tinyos"
         TOSDIR="${TOSROOT}/tos"
@@ -56,7 +52,7 @@ Install on Ubuntu
         type javac >/dev/null 2>/dev/null || PATH=`$LOCATE_JRE --javac`:$PATH
         export PATH
 
-11. Log out and log in (for the profile configuration to take effect) and verify if the toolchain is properly set up.::
+10. Log out and log in (for the profile configuration to take effect) and verify if the toolchain is properly set up.::
 
         cd /opt/tinyos/apps/Blink
-        make telosb
+        make vumcr

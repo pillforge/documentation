@@ -48,13 +48,17 @@ source_suffix = '.rst'
 # The encoding of source files.
 #
 # source_encoding = 'utf-8-sig'
+import sphinx_rtd_theme
 
+html_theme = "sphinx_rtd_theme"
+
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
 project = 'MCR_documentation'
-copyright = '2016, Arthur Binstein'
+copyright = '2016, Vanderbilt University'
 author = 'Arthur Binstein'
 
 # The version info for the project you're documenting, acts as replacement for

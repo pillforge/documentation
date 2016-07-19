@@ -1,3 +1,5 @@
+.. _Module Design Guide:
+
 Module Design Guide
 ===================
 
@@ -9,7 +11,7 @@ The following shows important pin locations on the
 where the module would be mounted:
 
 -	Pins 1 and 16 are for the voltage supply
--	Pins 2, 17, and 31-34 are ground
+-	Pins 2 and 17 are ground
 -	For SPI mode
 
 	- Pin 4 is the chip select
