@@ -4,6 +4,9 @@ Power Module
 ============
 
 .. image:: Power.jpg
+  :height: 500px
+  :width: 500px
+  :align: center
 
 The IC of the Power Management Module is the
 LTC2942. The module measures battery charge state, battery

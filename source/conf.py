@@ -57,7 +57,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 master_doc = 'index'
 
 # General information about the project.
-project = 'MCR_documentation'
+project = 'MCR Developer''s Guide'
 copyright = '2016, Vanderbilt University'
 author = 'Arthur Binstein'
 

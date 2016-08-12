@@ -1,6 +1,11 @@
 3DG
 ===
 
+.. image:: 3DG.JPG
+  :height: 500px
+  :width: 500px
+  :align: center
+
 The L3GD20 is a low-power three-axis angular rate sensor.
 
 **Key Features**

@@ -48,14 +48,9 @@ This leaves three modules available for sensors and actuators.
 --------------------------
 
 There are currently 9 existing sensing modules
-and 1 existing actuation modules for the MCR:
+and 1 existing actuation module for the MCR:
 
 .. image:: Module_chart.PNG
-
-
-(in the future this will be an embedded chart with links
-to pages that will have more information on each individual
-sensor)
 
 If your project requires a sensor or actuator that has not
 currently been developed for this platform, please
@@ -74,20 +69,20 @@ with TinyOS, or utilize the graphical
 design environment currently in development.
 
 To get started writing a TinyOS application, follow the TinyOS
-:ref:`Installation Guide` for Ubuntu.
+:ref:`Installation Guide <Installation Guide>` for Ubuntu.
 
 **Step 4:** Test and debug code
 -------------------------------
 
 To test, debug, and eventually implement the code,
-there exists a Debugger Board with all of the
+there exists a Development Board with all of the
 functionalities of the flexible circuit, including
 an identical MCU and the same wireless capabilities.
-Refer to the :ref:`Debugger Guide` for more information on
+Refer to the :ref:`Development Guide` for more information on
 the board layout and functions.
 
 We have developed a TinyOS platform called VUMCR that will serve as the
-make target for the application. For support with using the debugger board
+make target for the application. For support with using the Development Board
 to port TinyOS, see the :ref:`VUMCR Platform Support`
 
 
@@ -95,7 +90,7 @@ to port TinyOS, see the :ref:`VUMCR Platform Support`
 -------------------------------------------------------
 
 When the modules have all been tested and debugged
-on the Debugger Board, they must be attached to the
+on the Development Board, they must be attached to the
 30-pin miniature connectors on the flex band. There is a small black
 circle on each module that must be aligned with the small white
 circle located on each slot of the Flexible Circuit. REMEMBER,
@@ -103,9 +98,9 @@ slot A is designated for the :ref:`Power Management Module`, slot C
 is designated for the MCU, and the :ref:`Wireless Module`
 is docked
 on top of the MCU. The band must then be plugged
-into the debugger board and the application must be installed
+into the Development Board and the application must be installed
 to the MCU on the flexible circuit. The following shows the proper
-way to attach the flexible circuit to the debugger board:
+way to attach the flexible circuit to the Development board:
 
 .. image:: Flex_to_Board.png
 
@@ -134,8 +129,6 @@ Modules
 
 Links
 ^^^^^
-
-.. _Debugger Guide:
 
 .. toctree::
    :maxdepth: 2

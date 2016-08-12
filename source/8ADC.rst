@@ -1,6 +1,11 @@
 8ADC
 ====
 
+.. image:: 8ADC.JPG
+  :height: 500px
+  :width: 500px
+  :align: center
+
 The AD7689 is an 8-channel, 16-bit, charge
 redistribution successive approximation register (SAR)
 analog to-digital converter

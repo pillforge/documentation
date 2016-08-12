@@ -1,7 +1,7 @@
-.. _Debugger Guide:
+.. _Development Guide:
 
-Debugger Guide
-==============
+Development Board Guide
+=======================
 
 .. image:: Debugger_Guide.PNG
 
@@ -13,18 +13,21 @@ Debugger Guide
 #. Jumper Header Between MSP and Global Bus
 #. Global Bus
 #. Power Board
+#. Debugging Pins
+#. Receptacle Adaptor
 
-When the Debugger Board is first used, there are a few steps
-that must be taken to properly configure the board:
+When the Development Board is first used, the EZ-FET (1)
+must be properly configured to program the board.
 
-There are three different possibilities for
-downloading an application to an MSP430 MCU:
+There are three different ways to
+download an application to an MSP430 MCU:
 
-- Using the MCU on the board (3),
-- Using an MCU attached to the flexible band and connected to the board via the Flex Band Connector (5),
-- Using an MCU connected to slot 3 of the Global Bus (7).
+- Using the MCU on the board (3)
+- Using an MCU module attached to the flexible circuit and connected to the board via the Flexible Circuit Bus (5)
+- Using an MCU module nconnected to slot 3 of the Global Bus (7) using a Receptacle Adaptor (10)
 
-Only one of the MCUs can be programmed at a time.
+Only one of the MCUs can be programmed at a time, so to avoid
+communication errors, only one MCU should be connected at a time.
 To differentiate which MCU to use, the switches in (4),
 and the headers in (6) must be correctly configured.
 To use the board’s MCU (3), the SW3 switch (4) must
@@ -39,4 +42,10 @@ actuators when they are on the flexible band.
 If a modular MCU is the desired target,
 the SW3 switch must be switched to BUS mode, and
 an MCU module must be connected via the flexible band in (5)
-OR in the Global Bus (7).
+OR in the Global Bus (7). The current layout of the Development Board
+has all of the slots of the Global Bus (7) electrically identical,
+meaning Pin 1 on slot A is electrically connected to Pin 1 on
+slots B, C, D, and E. This means that only one sensor can be tested at a time.
+Future versions will allow for more functionality of the Global Bus. These
+slots are also electrically connected to the debugging pins on either side of
+the Global Bus. This provides easy access to the signals for debugging purposes.

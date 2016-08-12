@@ -1,5 +1,9 @@
 3DAM
 ====
+.. image:: 3DAM.JPG
+  :height: 500px
+  :width: 500px
+  :align: center
 
 The LSM303D is a system-in-package featuring a
 3D digital linear acceleration

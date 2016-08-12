@@ -1,6 +1,11 @@
 3DAG
 ====
 
+.. image:: 3DAG.JPG
+  :height: 500px
+  :width: 500px
+  :align: center
+
 The LSM330DLC is a system-in-package featuring a 3D
 digital accelerometer and a 3D digital gyroscope.
 

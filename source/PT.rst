@@ -1,6 +1,11 @@
 PT
 ===
 
+.. image:: PT.JPG
+   :height: 500px
+   :width: 500px
+   :align: center
+
 The MPL115A1 is an absolute pressure sensor with a digital SPI
 output targeting low cost applications.
 

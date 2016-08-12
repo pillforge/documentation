@@ -1,5 +1,11 @@
 3DA
 ===
+
+.. image:: 3DA.JPG
+  :height: 500px
+  :width: 500px
+  :align: center
+
 The LIS331DLH is an ultra low-power
 high performance three axes linear accelerometer
 with digital I2C/SPI serial interface standard output.

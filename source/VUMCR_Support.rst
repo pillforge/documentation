@@ -39,14 +39,13 @@ and the usb cable has to be connected. Additionally, mspdebug has to be installe
 **mspdebug tilib**
 
 The best way to use the MSP-FET430 jtag programmer is using the tilib library.
-To install this library, find libmsp430.so and place it in /usr/lib32/ or /usr/lib
-depending on whether it is 32 bit or 64 bit. Also make sure that mspdebug has the same
-architecture (32/64 bit) as libmsp430. To install a 32 bit mspdebug in ubuntu, use::
+To install this library, you must first find libmsp430.so and place it in /usr/lib32/ or /usr/lib
+depending on whether it is 32 bit or 64 bit. To do this, download the MSP Debug Developer's Package
+from http://www.ti.com/tool/MSPDS. You must create an account to access the download. Also make sure that mspdebug has the same
+architecture (32/64 bit) as libmsp430. If the 64 bit version is needed, you must rename the file libmsp430_64.so to libmsp430.so within your /usr/lib directory.
+To install a 32 bit mspdebug in ubuntu, use::
 
      $ sudo apt-get install mspdebug:i386
-
-The main problem with this approach is having to find libmsp430.so in the first place.
-There are multiple ways to do this including compiling it from http://www.ti.com/tool/MSPDS or digging through Code Composer's installation files.
 
 To flash/debug programs with this approach, run the following::
 

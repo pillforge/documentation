@@ -1,6 +1,11 @@
 3DM
 ===
 
+.. image:: 3DM.JPG
+  :height: 500px
+  :width: 500px
+  :align: center
+
 The LIS3MDL is an ultra-low-power
 high-performance three-axis magnetic sensor.
 
